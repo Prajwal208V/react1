@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 const para2 = {
   color: "blue",
 }
-const Fun_btn = () => {
+const FunctionBox = () => {
   const [properties, setProperty] = useState("box-none");
 
   const clickHandler = () => {
     let temp = (properties === "box") ? "box-none" : "box";
     setProperty(temp);
-    console.log(properties);
   }
   return (
     <div class="funct-compoent">
@@ -24,4 +23,4 @@ const Fun_btn = () => {
   )
 }
 
-export default Fun_btn;
+export default FunctionBox;

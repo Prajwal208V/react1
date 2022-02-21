@@ -1,6 +1,6 @@
 import React from 'react';
-import Fun_btn from './componets/Fun_btn';
-import Cls_btn from './componets/Cls_btn';
+import FunctionBox from './componets/FunctionBox';
+import ClassBox from './componets/ClassBox';
 import './index.css';
 
 const App = () => {
@@ -11,8 +11,8 @@ const App = () => {
               <h1 className="title">Styling using Functional and Class Component</h1>
             </div>
             <div className="box-continer">
-                <Fun_btn />
-                <Cls_btn />
+                <FunctionBox /> 
+                <ClassBox />
             </div>
           </div>
         </>

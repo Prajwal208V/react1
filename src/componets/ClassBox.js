@@ -3,12 +3,11 @@ const para2={
     color:"blue",
     fontSize:"1.1rem"
 }
-class Cls_btn extends React.Component { 
+class ClassBox extends Component { 
     state={
         displayProp:"box-none",
     }
     clickHandler(){
-       console.log(this.state.displayProp);
        let property=(this.state.displayProp ==='box') ? "box-none" : "box";
        this.setState(
             {displayProp:property},
@@ -28,4 +27,4 @@ class Cls_btn extends React.Component {
         )
     } 
 }
-export default Cls_btn;
+export default ClassBox;
