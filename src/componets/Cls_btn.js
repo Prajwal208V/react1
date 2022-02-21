@@ -1,9 +1,30 @@
-import React from 'react';
-
+import React,{Component} from 'react';
+const para2={
+    color:"blue",
+    fontSize:"1.1rem"
+}
 class Cls_btn extends React.Component { 
+    state={
+        displayProp:"box-none",
+    }
+    clickHandler(){
+       console.log(this.state.displayProp);
+       let property=(this.state.displayProp ==='box') ? "box-none" : "box";
+       this.setState(
+            {displayProp:property},
+       );
+    }
+
     render() {  
-        return( 
-        <button className="button">To see styling in class componet</button>
+        return(
+        <div class="class-compoent">
+            <button className="button" onClick={()=>{this.clickHandler()}}>To see styling in class componet</button>
+            <div className={this.state.displayProp} id="cls_box">
+                <h1 className="box_header">This is created using class componet</h1>
+                <p className="para1"> This is done using External CSS</p>
+                <p  style={para2}> This is done using Inline CSS</p>
+            </div>
+        </div>
         )
     } 
 }
